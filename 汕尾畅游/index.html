@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <title>汕尾畅游</title>
+    <link
+      rel="stylesheet"
+      href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="../css/mulu.css" type="text/css" />
+    <link rel="stylesheet" href="../css/common2.css" type="text/css" />
+    <script src="https://webapi.amap.com/maps?v=2.0&key=a4a217b065736f61aab5710457c6192a"></script>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <!-- <script src="https://webapi.amap.com/maps?v=2.0&key=a4a217b065736f61aab5710457c6192a&plugin=AMap.RectangleEditor"></script> -->
+    <script src="./js/img.config.js"></script>
+    <script src="../js/img.init.js"></script>
+  </head>
+
+  <body class="bodyBg">
+    <div class="wrap3840">
+      <!--头部开始-->
+      <div class="header">
+        <div class="left">
+          <a href="#" class="fl logo">
+            <img
+              src="./images/logo.png"
+              load-src="./images/logo.png"
+              width="526"
+              height="190"
+              class="img"
+            />
+          </a>
+        </div>
+        <div class="fr nav">
+          <ul class="fr">
+            <li class="">
+              <a href="javascript:;">
+                <i class="map"><span></span></i>
+                <p>手绘汕尾</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="catalog"><span></span></i>
+                <p>多维分类</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="game"><span></span></i>
+                <p>知识互动</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="sj"><span></span></i>
+                <p>数据地图</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="ts"><span></span></i>
+                <p>本馆特色</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="sousuo"><span></span></i>
+                <p>我要搜索</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--头部结束-->
+      <!-- 内容开始 -->
+      <div class="mapBox">
+        <div id="container"></div>
+        <div class="img-mask">
+          <div class="mask-box">
+            <img src="" alt="" class="img" />
+            <span class="close-btn">×</span>
+          </div>
+        </div>
+      </div>
+      <!-- 底部开始 -->
+      <div class="footer">
+        ©2018 版权所有：南京佳朝教育科技有限公司 苏ICP备13035115号-4
+        苏公网安备32010602010434 &emsp;&emsp;
+        <a href="#">产品介绍</a>&emsp;&emsp;<a href="#">联系我们</a>
+      </div>
+      <!--底部结束-->
+    </div>
+  </body>
+
+  <script src="../js/jquery-1.9.0.min.js"></script>
+  <script src="../js/mulu.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/isMobile.js"></script>
+  <script>
+    setImageLayer();
+    var map = new AMap.Map("container", {
+      center: [115.591582, 23.0546],
+      zoom: !isMobile() ? 9.9 : 8.8,
+      zooms: [7, 13],
+      showLabel: false,
+      layers: [AMap.createDefaultLayer(), ...imageLayers],
+      // 禁止触发鼠标平移事件
+      dragEnable: !isMobile(),
+      animateEnable: !isMobile(),
+      // 地图在移动终端上是否可通过多点触控缩放浏览地图
+      // touchZoom: !isMobile(),
+      // 地图是否可通过双击鼠标放大地图，默认为true
+      doubleClickZoom: !isMobile(),
+      //地图是否可缩放，默认值为true
+      // zoomEnable: !isMobile(),
+    });
+  </script>
+  <script src="../js/map.config.js"></script>
+  <script src="./js/map.location.js"></script>
+  <script src="../js/ElasticMarker.js"></script>
+</html>

@@ -1,0 +1,8 @@
+/* 提示语CSS-rem */
+.none{display: none;}
+.unfoldMan{width:3rem;height:3rem;position:fixed;top:0rem;left:11rem;z-index:12}
+.unfoldModel{width:8.54rem;position:absolute;left:-6.54rem;top:1.4rem}
+.unfoldModel .unfoldTop{width:100%;height:0.53rem}
+.unfoldModel .unfoldCenter{width:100%;min-height:0.53rem;background:url(../images/markedWords-c.png) no-repeat;background-size: 100% 100%;box-sizing:border-box;color:#8E2A00;font-size:0.46rem;padding:0 0.8rem;font-weight:700}
+.unfoldModel .unfoldBottom{width:100%;height:0.61rem}
+.unfoldModel .packUpMan{position:absolute;width:3rem;height:3rem;top:-1.5rem;right:-1.3rem}

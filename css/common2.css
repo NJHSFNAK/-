@@ -1,0 +1,232 @@
+@font-face {
+  font-family: sourceHanMedium;
+  src: url(../font/sourceHanMedium.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  font-family: sourceHanMedium;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.abs {
+  position: absolute;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.img {
+  position: absolute;
+}
+
+.nav,
+.nav ul {
+  width: auto;
+  min-width: auto;
+}
+
+.rb-location {
+  width: 0.2rem;
+  height: 0.27rem;
+  background-image: url(../images/location.png);
+  background-size: 100% 100%;
+  display: block;
+}
+
+.logo {
+  width: 8.55rem !important;
+  height: 2.25rem !important;
+  margin-top: 0.13rem;
+}
+
+.logo img {
+  height: 2.25rem !important;
+}
+
+.header {
+  /* height: 3.88rem;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.common-county-text {
+  font-size: 0.42rem;
+  font-weight: 500;
+  color: #C3B637;
+  position: absolute;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.mapBox {
+  width: 36.7rem;
+  height: 18.04rem;
+  position: relative;
+  margin: 0 auto;
+  background: #ffee87;
+  border: solid 0.03rem #5f250d;
+  padding: 0.08rem;
+  border-radius: 0.3rem;
+  /* cursor: ; */
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}
+
+/* 坐标点样式 */
+.amap-marker {
+  width: auto !important;
+  height: auto !important;
+}
+
+.amap-icon {
+  width: 24px;
+  height: 34px;
+}
+
+.amap-icon img {
+  z-index: 10;
+  transform: translateZ(0.1rem);
+  -webkit-transform: translateZ(0.1rem);
+  -moz-transform: translateZ(0.1rem);
+  -ms-transform: translateZ(0.1rem);
+  -o-transform: translateZ(0.1rem);
+}
+
+.marker {
+  position: absolute;
+  top: -20px;
+  right: -118px;
+  color: #fff;
+  padding: 4px 10px;
+  box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "";
+  background-color: #25A5F7;
+  border-radius: 3px;
+}
+
+.input-card {
+  width: 18rem;
+  z-index: 170;
+}
+
+.input-card .btn {
+  margin-right: .8rem;
+}
+
+.input-card .btn:last-child {
+  margin-right: 0;
+}
+
+.amap-info {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  transform-origin: unset;
+  display: none;
+}
+
+/* 去除下面小标志 */
+.bottom-center .amap-info-sharp,
+.bottom-center .amap-info-sharp:after {
+  display: none;
+}
+
+.amap-info-content {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  min-width: 10rem;
+  max-width: calc(36.99rem / 2);
+  height: fit-content;
+  max-height: fit-content;
+}
+
+/* 关闭按钮 */
+.amap-info-content {
+  overflow: hidden;
+}
+
+.amap-info-close {
+  width: 30px;
+  height: 19px;
+  font: 700 36px/14px Tahoma, Verdana, sans-serif
+}
+
+/* 返回按钮 */
+.GoBack {
+  background-size: 100% 100%;
+  width: 4.29rem;
+  height: 2.69rem;
+}
+
+/* 显示图片 */
+.img-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: none;
+}
+
+.img-mask .mask-box {
+  position: relative;
+}
+
+.img-mask .img {
+  position: unset;
+  padding: 0.5rem;
+}
+
+.img-mask .close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  display: block;
+}
+.amap-e,.amap-maps,.amap-layers,.amap-layer{
+  width: 100% !important;
+  height: 100% !important;
+}

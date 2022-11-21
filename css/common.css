@@ -1,0 +1,539 @@
+﻿@charset "utf-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 39.5573px;
+}
+
+@media only screen and (min-width: 320PX) and (max-width:360PX) {
+    html {
+        font-size: 13.65PX
+    }
+}
+
+@media only screen and (min-width: 360PX) and (max-width:375PX) {
+    html {
+        font-size: 15.36PX
+    }
+}
+
+@media only screen and (min-width: 375PX) and (max-width:390PX) {
+    html {
+        font-size: 16PX
+    }
+}
+
+@media only screen and (min-width: 390PX) and (max-width:414PX) {
+    html {
+        font-size: 16.64PX
+    }
+}
+
+@media only screen and (min-width: 414PX) and (max-width:640PX) {
+    html {
+        font-size: 17.664PX
+    }
+}
+
+@media screen and (min-width: 640PX) and (max-width:996PX) {
+    html {
+        font-size: 27.31PX
+    }
+}
+
+@media screen and (min-width: 1000PX) {
+    html {
+        font-size: 39.5573px
+    }
+}
+
+body {
+    font: 14px/1.8 Microsoft YaHei, Heiti SC, Arial, SimSun, Verdana;
+    background: #fff;
+    color: #333
+}
+
+ul {
+    list-style-type: none
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+    font: 0.14rem 微软雅黑;
+    color: #333
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    border-spacing: 0rem;
+    border-collapse: collapse;
+    width: 100%;
+    border: 0px;
+    margin: 0;
+    padding: 0
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+map,
+area {
+    outline: none
+}
+
+em {
+    font-style: normal
+}
+
+.clearfix {
+    overflow: hidden;
+    zoom: 1
+}
+
+.clear {
+    clear: both;
+    height: 0rem;
+    font-size: 0rem;
+    line-height: 0rem;
+    overflow: hidden
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 0.06rem;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 0.05rem;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 0.06rem;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 0.05rem;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 0.06rem;
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../font/ALIBABA-PUHUITI-REGULAR.ttf), url(../../font/ALIBABA-PUHUITI-REGULAR.eot);
+}
+
+em {
+    white-space: nowrap;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/ALIBABA-PUHUITI-REGULAR.ttf),
+        url(../font/ALIBABA-PUHUITI-REGULAR.eot);
+    /* IE9+ */
+}
+
+@font-face {
+    font-family: zcoolwenyiti;
+    src: url(../font/zcoolwenyiti.ttf);
+    /* IE9+ */
+}
+
+@font-face {
+    font-family: alibabaMedium;
+    src: url(../font/Alibaba-PuHuiTi-Medium.ttf);
+    /* IE9+ */
+}
+
+@font-face {
+    font-family: sourceHanSansRegular;
+    src: url(../font/SourceHanSansCN-Regular.ttf);
+    /* IE9+ */
+}
+
+@font-face {
+    font-family: sourceHanSansNormal;
+    src: url(../font/SourceHanSansCNVF-Normal.otf);
+    /* IE9+ */
+}
+
+
+.wrap3840 {
+    position: relative;
+    width: 38.4rem;
+    height: 21.6rem;
+    -moz-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    background: url(../images/body.jpg) no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.header {
+    /*height:2.5rem;*/
+    padding: 0 0.7rem;
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: 1.1rem;
+    position: relative;
+    width: 11.46rem !important;
+    height: 1.23rem !important
+}
+
+.logo img {
+    display: block;
+    width: auto !important;
+    height: 1.23rem !important;
+}
+
+.logo .boy {
+    position: absolute;
+    width: 1.27rem;
+    height: 1.79rem;
+    background: url(../images/boy.png) no-repeat;
+    background-size: 100%;
+    bottom: 0.35rem;
+    left: 0.7rem;
+    -webkit-animation: float ease-in-out 1.5s infinite;
+    animation: float ease-in-out 1.5s infinite;
+}
+
+.nav {
+    margin-top: 0.33rem;
+    /*margin-left: 7rem;*/
+    width: 22rem;
+    float: right;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 0.1rem;
+}
+
+.nav::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* .nav{
+    -ms-scroll-chaining: chained;
+    -ms-overflow-style: none;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 500%;
+    -ms-scroll-snap-type: proximity;
+    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+    -ms-overflow-style: none;
+    overflow: auto;
+} */
+.nav ul {
+    min-width: 21rem;
+    float: left;
+    overflow: hidden;
+    /*height:2rem;*/
+    padding-top: 0.1rem;
+}
+
+.nav li {
+    float: left;
+    line-height: 1.2;
+}
+
+.nav li a {
+    float: left;
+    padding-left: 0.8rem;
+    text-align: center;
+    font-size: 0.3rem
+}
+
+.nav li a i {
+    display: inline-block;
+    width: 1.32rem;
+    height: 1.35rem;
+    background: url(../images/nav.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i span {
+    width: 1.14rem;
+    height: 1.16rem;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -0.1rem
+}
+
+.nav li a p {
+    line-height: 1.5;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out
+}
+
+.nav li a i.BigIndex span {
+    background: url(../../img/BigIndex.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.index span {
+    background: url(../images/nav_01.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.map span {
+    background: url(../images/nav_03.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.catalog span {
+    background: url(../images/nav_05.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.game span {
+    background: url(../images/nav_07.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.sousuo span {
+    background: url(../images/nav_09.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.kb span {
+    background: url(../images/kb.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.sj span {
+    background: url(../images/sj.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.hd span {
+    background: url(../images/hd.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.ts span {
+    background: url(../images/ts.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li a i.huairou_icon span {
+    background: url(../images/huairou_icon.png) no-repeat;
+    background-size: 100%
+}
+
+.nav li.currentNav a i span {
+    top: 0
+}
+
+.nav li:hover a i span {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite
+}
+
+.nav li:hover a p {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2)
+}
+
+.footer {
+    height: 0.98rem;
+    line-height: 0.68rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #582e0d
+}
+
+.footer a {
+    display: inline-block;
+    color: #582e0d;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out
+}
+
+.footer a:hover {
+    font-weight: bold;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2)
+}
+
+.mapBox {
+    height: 18.02rem;
+    background: #dad2c1;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    position: relative;
+    width: 37rem
+}
+
+.GoBack {
+    display: block;
+    width: 3.18rem;
+    height: 1.24rem;
+    background: url(../images/back.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -0.3rem;
+    bottom: -0.7rem;
+    padding-top: 1.2rem;
+    line-height: 1.04rem;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    z-index: 100
+}
+
+
+/*设置元素字号大小*/
+.elementBox a em {
+    font-size: 0.4rem !important;
+    white-space: nowrap !important;
+}
+
+.fenleiBox a em {
+    font-size: 0.5rem !important;
+    white-space: nowrap !important;
+}
+
+.btnFont {
+    line-height: 1.5;
+}
+
+/* 文字可修改-手绘图 */
+h3.logoTil {
+    position: absolute;
+    top: -0.5rem;
+    left: 2.58rem;
+    max-width: 12.5rem;
+    height: 1.62rem;
+    line-height: 1.62rem;
+    text-align: center;
+    color: #6B462B;
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+h3.logoTil .smallTil {
+    display: inline-block;
+    font-size: 0.74rem;
+    color: #DF9706;
+}
+
+/*区域弹层*/
+.openArea .areaBox a {
+    z-index: 100;
+}

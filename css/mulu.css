@@ -1,0 +1,76 @@
+﻿@charset "utf-8";
+/* CSS 目录部分 */
+.fl{float:left;}
+.none{display: none;}
+
+/* .mapBox{overflow: hidden;} */
+.catalogBigBox{position:absolute;z-index:11;height:100%;width:5.46rem;right:-5.46rem}
+.catalogBtn{position:absolute;width:0.98rem;height:2.19rem;left:-0.98rem;top:50%;background:url(../images/catalogBtn.png) no-repeat;background-size:100% 100%;cursor:pointer}
+.closeCatalog{background:url(../images/closeCatalog.png) no-repeat;background-size:100% 100%}
+.catalogBox{position: absolute;height: 18.03rem;width: 5.46rem;top: 0;background:#faf0e9;border-left: solid 0.04rem #4c1d0a;border-right: solid 0.04rem #4c1d0a;border-top-right-radius:0.3rem;border-bottom-right-radius: 0.3rem;opacity: 0;overflow: hidden;}
+
+.cataNavHead{height: 2rem;}
+.catalogTit{height:0.81rem;line-height:0.81rem;padding-right:0.4rem;font-size:0.3rem;color:#666}
+.catalogTit span.fr{width: 3rem;height: 0.81rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.catalogName{background:#f68e4e;color:#fff;font-size:0.4rem;padding:0 0.3rem;border-radius:0 0 0.5rem 0}
+.catalogBox .ul1{padding:0 0.2rem 0.2rem 0.4rem;height:15.83rem;overflow-y: auto;overflow-x: hidden;}
+.catalogBox ul .li1{position:relative;font-size:0.44rem;font-weight:bold;margin-bottom:0.2rem}
+.catalogBox ul .li1 a{display:block;height:0.6rem;line-height:0.6rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.catalogBox ul .li1Text{display:inline-block;max-width:2.5rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.catalogBox ul .li1 .btns{display:inline-block;margin-left:0.2rem;width:0.6rem;height:0.6rem;background:url(../images/selec-icon-down.png) center no-repeat;background-size:0.24rem 0.32rem}
+.catalogBox ul .li1 .btns.active{width:0.6rem;height:0.6rem;background:url(../images/selec-icon-up.png) center no-repeat;background-size:0.32rem 0.24rem}
+.catalogBox ul .li1 a:hover{color:#f68d4e}
+.catalogBox .ul2,.catalogBox .ul3{list-style:outside;color:#666;margin:0.1rem 0 0 0.8rem}
+.catalogBox .ul3{color:#999}
+.catalogBox ul .li2,.catalogBox ul .li3{list-style:outside;font-size:0.4rem;margin:0.1rem 0}
+.catalogBox ul .li2 a,.catalogBox ul .li3 a{color:#666;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.catalogBox ul .li3 a{color:#999}
+.catalogBox ul .li2:hover,.catalogBox ul .li3:hover{color:#f68d4e}
+.wid80{width:1.5rem}
+
+.catalogNum{margin-left:0.1rem;display:block;width:0.4rem;height:0.4rem;border:solid 0.05rem #4c1d09;border-radius:100%;font-weight:normal;font-size:0.26rem;text-align:center;line-height:0.4rem;color:#5b3213;font-family:microSoft Yahei;overflow:hidden;box-shadow:0.05rem 0.05rem 0rem #fed70e;margin-top:0.28rem}
+.catalogNum em{display:block;background:#fed70e;margin-left:0.05rem;border-radius:100%}
+.unlogin{float:left;height:0.5rem;line-height:0.5rem;background:#f9e5b5;border-radius:0.1rem;border:solid 0.02rem #f68d4e;font-size:0.24rem;font-weight:normal;color:#f68d4e;text-align:center;padding:0rem 0.14rem;margin-right:0.06rem}
+.catalogBox::-webkit-scrollbar{
+    width: 0.1rem;
+    background-color: #c0b1b7;
+    border-radius: 0.5rem;
+}
+.catalogBox::-webkit-scrollbar-thumb{
+    background-color: #8b6e64;
+    border-radius: 0.5rem;
+}
+.catalogBox::-webkit-scrollbar-track{
+    -webkit-box-shadow-: inset 0 0 0.1rem rgba(0,0,0,0.3);
+    background-color: #c0b1b7;
+    border: 0.06rem;
+    border-radius: 0.5rem;
+}
+
+
+/**省市区域弹层**/
+.jsPic{cursor:pointer}
+.cityName{display:none}
+.mask{position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(255,255,255,.6);z-index:12}
+.closeMask{width:1rem;height:1rem;border-radius:100%;background:#5f250d;color:#fff;position:absolute;right:0.1rem;top:0.1rem;z-index:13;text-align:center;line-height:1rem;font-size:0.5rem}
+
+/*翻页*/
+.overPage{position: absolute;right: 0;top: 50%;transform:translateY(-3rem);}
+.overPage a img{width: 0.98rem;height: 2.19rem;}
+
+/* Ⅰ级Ⅱ级III级导航 */
+.muluNav{font-size:0.4rem;margin-top:0.2rem;overflow:hidden}
+.muluNav span{float:left;height:0.5rem;line-height:0.5rem;border-radius:0.1rem;border:solid 0.02rem gray;font-weight:normal;color:gray;text-align:center;padding:0rem 0.14rem;margin-right:0.06rem;cursor:pointer;margin:0 0.2rem}
+.muluNav span.active,.muluNav span:hover{background:#f9e5b5;border:solid 0.02rem #f68d4e;color:#f68d4e}
+
+/* 手绘图地区弹层样式 start*/
+.cityBox{position:absolute;white-space:nowrap;z-index:13}
+.cityBox a {font-size:0.38rem;font-weight: bold;position: absolute;line-height: 1;color: #333;}
+.cityBox b{position: absolute;}
+.cityBox a b{width:0.19rem;height:0.19rem;background:url(../images/dian02.gif) no-repeat;background-size: 100%;}
+.cityBox a b.dian02{width:0.19rem;height:0.19rem;background:url(../images/dian03.gif) no-repeat;background-size: 100%;}
+
+.cityBox a.detail2{color: #E65C1D;}
+.cityBox a.detail2 b{position:absolute;width:0.29rem;height:0.39rem;background:url(../images/dian.gif) no-repeat;background-size: 100%;}
+.cityBox a.detail2 b.dian02{position:absolute;width:0.29rem;height:0.39rem;background:url(../images/dian04.gif) no-repeat;background-size: 100%;}
+/* 手绘图地区弹层样式 end*/
