@@ -61,20 +61,18 @@ function setEMImageLayer() {
   for (let i = 0; i < EMConfig.length; i++) {
     // 样式列表
     var stylesArr = commonStyleArrFun(EMConfig[i].imageUrl, EMConfig[i].size);
-    AMap.plugin(["AMap.ElasticMarker"], function () {
-      var elasticMarker = commonLoaderLayer(
-        EMConfig[i].bounds,
-        EMConfig[i].zooms,
-        { "data-map": EMConfig[i].dataMap },
-        stylesArr
-      );
-      // 点击获取data-map
-      elasticMarker.on("click", function () {
-        // 添加data-map
-        elementClick(elasticMarker.getExtData());
-      });
-      imageEMILayers.push(elasticMarker);
+    var elasticMarker = commonLoaderLayer(
+      EMConfig[i].bounds,
+      EMConfig[i].zooms,
+      { "data-map": EMConfig[i].dataMap },
+      stylesArr
+    );
+    // 点击获取data-map
+    elasticMarker.on("click", function () {
+      // 添加data-map
+      elementClick(elasticMarker.getExtData());
     });
+    imageEMILayers.push(elasticMarker);
   }
 }
 
@@ -91,20 +89,20 @@ function setEMLocationLayer() {
     // 样式列表
     var stylesArr = commonStyleArrFun("/images/location.png", [37, 49]);
     // 加载灵活点标记的插件
-    AMap.plugin(["AMap.ElasticMarker"], function () {
-      var elasticMarker = commonLoaderLayer(
-        lenPos[i].lnglats,
-        lenPos[i].zooms,
-        { imageUrl: getImgSrc(lenPos[i].imageUrl) },
-        stylesArr
-      );
-      // 点击获取data-map
-      elasticMarker.on("click", function () {
-        // 添加data-map
-        locationClick(elasticMarker.getExtData().imageUrl);
-      });
-      locationEMILayers.push(elasticMarker);
+    // AMap.plugin(["AMap.ElasticMarker"], function () {
+    var elasticMarker = commonLoaderLayer(
+      lenPos[i].lnglats,
+      lenPos[i].zooms,
+      { imageUrl: getImgSrc(lenPos[i].imageUrl) },
+      stylesArr
+    );
+    // 点击获取data-map
+    elasticMarker.on("click", function () {
+      // 添加data-map
+      locationClick(elasticMarker.getExtData().imageUrl);
     });
+    locationEMILayers.push(elasticMarker);
+    // });
   }
 }
 

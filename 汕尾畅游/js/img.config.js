@@ -271,22 +271,22 @@ function setImageLayer() {
 
 // 坐标点
 var lenPos = [
-  // {
-  //   lnglats: [115.526929, 23.38389],
-  //   imageUrl: `${imagePath}lhnwhlstgy.png`,
-  // },
-  // {
-  //   lnglats: [115.587574, 23.366234],
-  //   imageUrl: `${imagePath}lhsxsgy.png`,
-  // },
-  // {
-  //   lnglats: [115.641349, 23.25351],
-  //   imageUrl: `${imagePath}lhrlzy.png`,
-  // },
-  // {
-  //   lnglats: [115.303472, 23.073471],
-  //   imageUrl: `${imagePath}lhsslgyjq.png`,
-  // },
+  {
+    lnglats: [115.526929, 23.38389],
+    imageUrl: `${imagePath}lhnwhlstgy.png`,
+  },
+  {
+    lnglats: [115.587574, 23.366234],
+    imageUrl: `${imagePath}lhsxsgy.png`,
+  },
+  {
+    lnglats: [115.641349, 23.25351],
+    imageUrl: `${imagePath}lhrlzy.png`,
+  },
+  {
+    lnglats: [115.303472, 23.073471],
+    imageUrl: `${imagePath}lhsslgyjq.png`,
+  },
   // {
   //   lnglats: [115.279597, 23.052966],
   //   imageUrl: `${imagePath}yls.png`,
