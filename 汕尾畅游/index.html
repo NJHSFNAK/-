@@ -106,7 +106,10 @@
   <script src="../js/map.config.js"></script>
   <script src="../js/ElasticMarker.js"></script>
   <script>
+    // 显示提示信息
     $(".tip-text").css({ display: "grid" });
+    // 加载提示内容至少显示两秒
+    let time1 = new Date().getTime();
     var map = null;
     AMapLoader.load({
       //首次调用 load
@@ -153,7 +156,14 @@
         map.add(imageEMILayers);
         map.add(locationEMILayers);
         map.setFitView(polygons[0], true, [0, 0, 0, 0], 20);
-        $(".tip-text").hide();
+        let time2 = new Date().getTime();
+        if (time2 - time1 >= 2000) {
+          $(".tip-text").hide();
+        } else {
+          setTimeout(() => {
+            $(".tip-text").hide();
+          }, 2000 - (time2 - time1));
+        }
       });
     });
   </script>
