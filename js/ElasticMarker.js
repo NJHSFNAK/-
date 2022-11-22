@@ -116,9 +116,8 @@ function locationClick(imageUrl) {
 $(".img-mask .close-btn").click(() => {
   $(".img-mask").hide();
 });
-
+map.add(imageEMILayers);
+map.add(locationEMILayers);
 map.on("complete", function () {
-  map.add(imageEMILayers);
-  map.add(locationEMILayers);
   map.setFitView(polygons[0], true, [0, 0, 0, 0], 20);
 });
