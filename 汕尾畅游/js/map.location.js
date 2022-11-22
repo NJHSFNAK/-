@@ -12,4 +12,3 @@ const jdsEle = {
   // 距离左、上、右、下边界距离
   pos: [1828, 1804, 1872, 0]
 }
-posCalcLnglat(lhsxsEle, jdsEle)

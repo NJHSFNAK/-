@@ -1,6 +1,3 @@
-// 获取地图缩放等级范围
-const zooms = map.getZooms();
-
 // 公共样式的映射
 var zoomStyleMapping = {
   1: 0,
@@ -61,7 +58,8 @@ function setEMImageLayer() {
   for (let i = 0; i < EMConfig.length; i++) {
     // 样式列表
     var stylesArr = commonStyleArrFun(EMConfig[i].imageUrl, EMConfig[i].size);
-    var elasticMarker = commonLoaderLayer(
+    // 建立作用域
+    let elasticMarker = commonLoaderLayer(
       EMConfig[i].bounds,
       EMConfig[i].zooms,
       { "data-map": EMConfig[i].dataMap },
@@ -75,22 +73,15 @@ function setEMImageLayer() {
     imageEMILayers.push(elasticMarker);
   }
 }
-
-setEMImageLayer();
-
 // 存放坐标数据
 const locationEMILayers = [];
-
-setEMLocationLayer();
 
 // 加载坐标数据
 function setEMLocationLayer() {
   for (let i = 0; i < lenPos.length; i++) {
     // 样式列表
     var stylesArr = commonStyleArrFun("/images/location.png", [37, 49]);
-    // 加载灵活点标记的插件
-    // AMap.plugin(["AMap.ElasticMarker"], function () {
-    var elasticMarker = commonLoaderLayer(
+    let elasticMarker = commonLoaderLayer(
       lenPos[i].lnglats,
       lenPos[i].zooms,
       { imageUrl: getImgSrc(lenPos[i].imageUrl) },
@@ -102,7 +93,6 @@ function setEMLocationLayer() {
       locationClick(elasticMarker.getExtData().imageUrl);
     });
     locationEMILayers.push(elasticMarker);
-    // });
   }
 }
 
@@ -113,9 +103,4 @@ function locationClick(imageUrl) {
 
 $(".img-mask .close-btn").click(() => {
   $(".img-mask").hide();
-});
-map.add(imageEMILayers);
-map.add(locationEMILayers);
-map.on("complete", function () {
-  map.setFitView(polygons[0], true, [0, 0, 0, 0], 20);
 });

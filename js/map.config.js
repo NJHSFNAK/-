@@ -31,7 +31,6 @@ function drawBounds(bounds) {
       });
       polygons.push(polygon);
     }
-    //console.log(pathArray)
     var polygon = new AMap.Polygon({
       path: pathArray,
       // strokeColor: '#00eeff', //边框线颜色
@@ -41,11 +40,8 @@ function drawBounds(bounds) {
     });
 
     polygon.setPath(pathArray);
-    console.log(pathArray[1]);
     map.add(polygon);
   }
-
-  // map.setFitView(polygons) //视口自适应
 
   polygons.push(polygon);
 }
@@ -142,9 +138,6 @@ function moveFun(event) {
     }
   }
 }
-map.on("zoomstart", function (e) {
-  mouseMove = false;
-});
 
 container.addEventListener("touchend", function (e) {
   if (e.touches.length === 0) {
@@ -155,13 +148,6 @@ container.addEventListener("touchend", function (e) {
     ey = 0;
   }
 });
-
-// 鼠标点击获取经纬度
-map.on("click", function (e) {
-  // 经度
-  // console.log('坐标', e.lnglat.getLng(), e.lnglat.getLat());
-});
-
 
 // 点击元素事件
 function elementClick(ExtData) {
